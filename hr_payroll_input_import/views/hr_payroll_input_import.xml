@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_input_import_form" model="ir.ui.view">
+            <field name="name">hr.payroll.input.import.form</field>
+            <field name="model">hr.payroll.input.import</field>
+            <field name="arch" type="xml">
+                <form string="Input Import">
+		            <sheet>
+                        <legend>Input Import</legend>
+                        <group>
+                            <group>
+                                 <field name="date"></field>
+                                 <field name="employee_id"></field>
+                                 <field name="inputs_id"></field>
+                                 <field name="name"></field>
+                                 <field name="amount"></field>
+                                 <field name="paid" readonly="1"></field>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_tree_hr_input_import" model="ir.ui.view">
+             <field name="name">view.tree.hr.payroll.input.import</field>
+             <field name="model">hr.payroll.input.import</field>
+             <field name="arch" type="xml">
+                <tree>
+                    <field name="date"></field>
+                    <field name="employee_id"></field>
+                    <field name="inputs_id"></field>
+                    <field name="name"></field>
+                    <field name="amount"></field>
+                    <field name="paid" readonly="1"></field>
+                </tree>
+            </field>
+    	</record>
+
+        <record id="hr_input_import_action" model="ir.actions.act_window">
+            <field name="name">Input Import</field>
+            <field name="res_model">hr.payroll.input.import</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

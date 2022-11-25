@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem name="Input Import"
+        id="menu_base_hr_prestamo_request"
+        parent = "hr_work_entry_contract.menu_hr_payroll_root"
+        sequence="65"/>
+
+    <menuitem name="Input Requests"
+        parent="menu_base_hr_prestamo_request"
+        id="menu_hr_prestamo_request"
+        action="hr_input_import_action"
+        sequence="10"/>
+
+</odoo>

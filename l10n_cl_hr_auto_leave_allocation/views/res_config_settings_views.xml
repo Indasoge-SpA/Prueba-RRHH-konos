@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="res_config_settings_view_form_inherit_employee" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.employee</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority" eval="35"/>
+            <field name="inherit_id" ref="hr_payroll.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@id='hr_payroll_localization']" position="inside">
+                    <div class="col-lg-6 col-12 o_setting_box">
+                        <div class="o_setting_left_pane">
+                            <field name="auto_leave_allocation"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="auto_leave_allocation"/>
+                            <div class="text-muted">
+                                Automatically increment a leave type to the employees
+                            </div>
+                            <div class="content-group">
+                                <div class="row">
+                                    <label for="auto_leave_number" class="col-lg-3 o_light_label"
+                                        attrs="{'invisible': [('auto_leave_allocation', '=', False)]}"/>
+                                    <field name="auto_leave_number"
+                                        attrs="{'invisible': [('auto_leave_allocation', '=', False)], 'required': [('auto_leave_allocation', '!=', False)]}"/>
+                                </div>
+                                <div class="row">
+                                    <label for="holiday_status_id" class="col-lg-3 o_light_label" string="Type"
+                                        attrs="{'invisible': [('auto_leave_allocation', '=', False)]}"/>
+                                    <field name="holiday_status_id" placeholder="Leave Type"
+                                        attrs="{'invisible': [('auto_leave_allocation', '=', False)], 'required': [('auto_leave_allocation', '!=', False)]}"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

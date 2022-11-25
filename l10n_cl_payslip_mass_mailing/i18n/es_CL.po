@@ -1,0 +1,169 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* payslip_mass_mailing
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e-20190410\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-29 20:38+0000\n"
+"PO-Revision-Date: 2019-08-29 16:42-0400\n"
+"Last-Translator: Nelson Ramírez <info@konos.cl>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.2.3\n"
+
+#. module: payslip_mass_mailing
+#: model:mail.template,body_html:payslip_mass_mailing.email_template_hr_payslip
+msgid ""
+"\n"
+"                <p>Dear ${object.employee_id.name},<br/>\n"
+"                    <br/>\n"
+"                    Kindly Find the Attachment for Salary Slip.\n"
+"                </p>\n"
+"                <br/>\n"
+"                <br/>\n"
+"                <br/>\n"
+"                <div style=\"width: 375px; margin: 0px; padding: 0px; background-color: #8E0000; border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px; background-repeat: repeat no-repeat;\">\n"
+"                    <h3 style=\"margin: 0px; padding: 2px 14px; font-size: 12px; color: #DDD;\">\n"
+"                        <strong style=\"text-transform:uppercase;\">${object.company_id.name}</strong></h3>\n"
+"                </div>\n"
+"                <div style=\"width: 347px; margin: 0px; padding: 5px 14px; line-height: 16px; background-color: #F2F2F2;\">\n"
+"                    <span style=\"color: #222; margin-bottom: 5px; display: block; \">\n"
+"                        ${object.company_id.partner_id.sudo().with_context(show_address=True, html_format=True).name_get()[0][1] | safe}\n"
+"                    </span>\n"
+"                    % if object.company_id.phone:\n"
+"                        <div style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">\n"
+"                            Phone:&nbsp; ${object.company_id.phone}\n"
+"                        </div>\n"
+"                    % endif\n"
+"                    % if object.company_id.website:\n"
+"                        <div>\n"
+"                            Web :&nbsp;<a href=\"${object.company_id.website}\">${object.company_id.website}</a>\n"
+"                        </div>\n"
+"                    %endif\n"
+"                    <p></p>\n"
+"                </div>\n"
+"            "
+msgstr ""
+"\n"
+"                <p>Estimad@ ${object.employee_id.name},<br/>\n"
+"                    <br/>\n"
+"                    Por favor, encuentre el archivo adjunto de su liquidación de sueldo.\n"
+"                </p>\n"
+"                <br/>\n"
+"                <br/>\n"
+"                <br/>\n"
+"                <div style=“width: 375px; margin: 0px; padding: 0px; background-color: #8E0000; border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px; background-repeat: repeat no-repeat;”>\n"
+"                    <h3 style=“margin: 0px; padding: 2px 14px; font-size: 12px; color: #DDD;”>\n"
+"                        <strong style=“text-transform:uppercase;”>${object.company_id.name}</strong></h3>\n"
+"                </div>\n"
+"                <div style=“width: 347px; margin: 0px; padding: 5px 14px; line-height: 16px; background-color: #F2F2F2;”>\n"
+"                    <span style=“color: #222; margin-bottom: 5px; display: block; “>\n"
+"                        ${object.company_id.partner_id.sudo().with_context(show_address=True, html_format=True).name_get()[0][1] | safe}\n"
+"                    </span>\n"
+"                    % if object.company_id.phone:\n"
+"                        <div style=“margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; “>\n"
+"                            Phone:&nbsp; ${object.company_id.phone}\n"
+"                        </div>\n"
+"                    % endif\n"
+"                    % if object.company_id.website:\n"
+"                        <div>\n"
+"                            Web :&nbsp;<a href=“${object.company_id.website}”>${object.company_id.website}</a>\n"
+"                        </div>\n"
+"                    %endif\n"
+"                    <p></p>\n"
+"                </div>\n"
+"            "
+
+#. module: payslip_mass_mailing
+#: model:mail.template,report_name:payslip_mass_mailing.email_template_hr_payslip
+msgid "${(object.name or '').replace('/','_')}"
+msgstr ""
+
+#. module: payslip_mass_mailing
+#: model:mail.template,subject:payslip_mass_mailing.email_template_hr_payslip
+msgid "${object.employee_id.company_id.name} - Ref ${object.name or 'n/a' }"
+msgstr ""
+
+#. module: payslip_mass_mailing
+#: model_terms:ir.ui.view,arch_db:payslip_mass_mailing.payslip_mass_mailing_view_form
+msgid "Are you sure to send these Payslips?"
+msgstr "¿Estás seguro de enviar estas Liquidaciones?"
+
+#. module: payslip_mass_mailing
+#: model_terms:ir.ui.view,arch_db:payslip_mass_mailing.payslip_mass_mailing_view_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: payslip_mass_mailing
+#: model:ir.model.fields,field_description:payslip_mass_mailing.field_payslip_mass_mailing__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: payslip_mass_mailing
+#: model:ir.model.fields,field_description:payslip_mass_mailing.field_payslip_mass_mailing__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: payslip_mass_mailing
+#: model:ir.model.fields,field_description:payslip_mass_mailing.field_payslip_mass_mailing__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: payslip_mass_mailing
+#: model:ir.model.fields,field_description:payslip_mass_mailing.field_payslip_mass_mailing__id
+msgid "ID"
+msgstr "ID"
+
+#. module: payslip_mass_mailing
+#: model:ir.model.fields,field_description:payslip_mass_mailing.field_payslip_mass_mailing____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: payslip_mass_mailing
+#: model:ir.model.fields,field_description:payslip_mass_mailing.field_payslip_mass_mailing__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: payslip_mass_mailing
+#: model:ir.model.fields,field_description:payslip_mass_mailing.field_payslip_mass_mailing__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: payslip_mass_mailing
+#: model:ir.actions.act_window,name:payslip_mass_mailing.payslip_mass_mailing_action
+#: model_terms:ir.ui.view,arch_db:payslip_mass_mailing.payslip_mass_mailing_view_form
+msgid "Payslip Mass Mailing"
+msgstr "Envío Masivo de Liquidaciones"
+
+#. module: payslip_mass_mailing
+#: code:addons/payslip_mass_mailing/wizard/payslip_mass_mailing.py:44
+#, python-format
+msgid "Payslip not sent to  map work email in employee form"
+msgstr "Liquidación no enviada"
+
+#. module: payslip_mass_mailing
+#: code:addons/payslip_mass_mailing/wizard/payslip_mass_mailing.py:42
+#, python-format
+msgid "Payslips should be in Done state"
+msgstr "Las liquidaciones deben estar en estado Hecho"
+
+#. module: payslip_mass_mailing
+#: model_terms:ir.ui.view,arch_db:payslip_mass_mailing.payslip_mass_mailing_view_form
+msgid "Send Mail"
+msgstr "Enviar correo"
+
+#. module: payslip_mass_mailing
+#: model_terms:ir.ui.view,arch_db:payslip_mass_mailing.payslip_mass_mailing_view_form
+msgid "or"
+msgstr "o"
+
+#. module: payslip_mass_mailing
+#: model:ir.model,name:payslip_mass_mailing.model_payslip_mass_mailing
+msgid "payslip.mass.mailing"
+msgstr ""

@@ -1,0 +1,53 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_cl_hr_auto_leave_allocation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e-20191106\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-03 17:43+0000\n"
+"PO-Revision-Date: 2020-02-03 17:43+0000\n"
+"Last-Translator: Alexander Olivares <aolivares@konos.cl>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_cl_hr_auto_leave_allocation
+#: model:ir.model.fields,help:l10n_cl_hr_auto_leave_allocation.field_res_config_settings__auto_leave_allocation
+#: model_terms:ir.ui.view,arch_db:l10n_cl_hr_auto_leave_allocation.res_config_settings_view_form_inherit_employee
+msgid "Automatically increment a leave type to the employees"
+msgstr "Incremente automáticamente un tipo de licencia para los empleados"
+
+#. module: l10n_cl_hr_auto_leave_allocation
+#: model:ir.model.fields,field_description:l10n_cl_hr_auto_leave_allocation.field_res_config_settings__auto_leave_number
+msgid "Days"
+msgstr "Dias"
+
+#. module: l10n_cl_hr_auto_leave_allocation
+#: model:ir.model.fields,field_description:l10n_cl_hr_auto_leave_allocation.field_res_config_settings__auto_leave_allocation
+msgid "Enable automatic leave allocate"
+msgstr "Habilitar la asignación automática de licencias"
+
+#. module: l10n_cl_hr_auto_leave_allocation
+#: model:ir.model.fields,field_description:l10n_cl_hr_auto_leave_allocation.field_res_config_settings__holiday_status_id
+#: model_terms:ir.ui.view,arch_db:l10n_cl_hr_auto_leave_allocation.res_config_settings_view_form_inherit_employee
+msgid "Leave Type"
+msgstr "Tipo de ausencia"
+
+#. module: l10n_cl_hr_auto_leave_allocation
+#: model:ir.model.fields,help:l10n_cl_hr_auto_leave_allocation.field_res_config_settings__auto_leave_number
+msgid "Number of days to increment"
+msgstr "Número de días a incrementar"
+
+#. module: l10n_cl_hr_auto_leave_allocation
+#: model_terms:ir.ui.view,arch_db:l10n_cl_hr_auto_leave_allocation.res_config_settings_view_form_inherit_employee
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_cl_hr_auto_leave_allocation
+#: model:ir.model.fields,help:l10n_cl_hr_auto_leave_allocation.field_res_config_settings__holiday_status_id
+msgid "Type to be incremented"
+msgstr "Tipo a ser incrementado"
